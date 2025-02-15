@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');* {
+   font-family: Arial, Helvetica, sans-serif;
+   list-style:none;
+   font-weight: 100;
+   
+ }
+:root{
+    --primary-background-color: var(--light-theme-background-color);
+      --secondary-text-color: var(--light-theme-secondary-color);
+      --disabled-text-color: var(--light-theme-disabled-color);
+      --divider-color: var(--light-theme-divider-color);
+      --error-color: #dd2c00;
+      --primary-color: #3f51b5;
+      --light-primary-color: #c5cae9;
+      --dark-primary-color: #303f9f;
+      --accent-color: #ff4081;
+      --light-accent-color: #ff80ab;
+      --dark-accent-color: #f50057;
+      --light-theme-background-color: #fff;
+      --light-theme-base-color: #000;
+      --light-theme-text-color: #212121;
+      --light-theme-secondary-color: #737373;
+      --light-theme-disabled-color: #9b9b9b;
+      --light-theme-divider-color: #dbdbdb;
+      --dark-theme-background-color: #212121;
+      --dark-theme-base-color: #fff;
+      --dark-theme-text-color: #fff;
+      --dark-theme-secondary-color: #bcbcbc;
+      --dark-theme-disabled-color: #646464;
+      --dark-theme-divider-color: #3c3c3c;
+      --text-primary-color: var(--dark-theme-text-color);
+      --default-primary-color: var(--primary-color);
+    }
+    .nav{
+        display: none;
+    }
+body{
+   border: none;
+    margin: auto;
+    width: 100%;
+
+
+}
+header{
+    display: flex;
+    border-top: 0;
+    justify-content:space-around;
+}
+.logo{
+    display: flex;
+    gap: 2rem;
+}
+.navber{
+    display: flex;
+    gap: 2rem;
+}
+@media all and (max-width:1000px) {
+    .navber{
+        flex-direction: column;
+        width: 10rem;
+        margin-top: 2.5rem;
+        background-color: var(--dark-primary-color);
+        height: 25rem;
+        padding: 1rem;
+        position: absolute;
+        left: 0;
+        left:-100%
+        
+    }
+    .nav{
+        display: flex;
+    }
+}
+ 
+    
+ 
+ .navber a:hover, .navber a:focus{
+    border-radius: 5px;
+    padding: 3px;
+    height: 20px;
+    background-color: var(--dark-theme-secondary-color);
+    color: var(--dark-theme-base-color);
+}
+header a{
+   padding: 3px;
+    color: var(--light-theme-base-color);
+    text-align: center;
+    text-decoration: none;
+ }
+ header{
+    height: 1.5rem;
+    width: 100%;
+    top: 0%;
+    text-align: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--dark-primary-color);
+
+    
+ }
+
+
+
+ form{
+    max-width: 22rem;
+    gap: 3px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 22px;
+    border-radius: 25px;
+    width: 100%;
+    padding: 1rem .5rem 2rem 1rem;
+    margin: auto;
+ }
+.singin:hover{
+    color: var(--dark-theme-base-color);
+    background-color: hsl(0, 43%, 95%);
+
+}
+ input, select{
+    display: inline-block;
+    border: 1px solid hsl(0, 1%, 15%);
+    width: 100%;
+    height: 3rem;
+    margin-left: 1;
+    font-size: 18px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 4px;
+    padding-left: 1rem;
+
+ }
+ /* .submit{
+    justify-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    background-color:var(--dark-primary-color);
+ } */
+ .submit:hover{
+   background-color: hsl(240, 76%, 68%);
+ }
+ .sigin ,.login{ 
+   width: 100%;
+   margin-top: .5rem;
+   margin-bottom: .5rem;
+   height: 2.5rem;
+   font-size: 18px;
+   border: none;
+   color: blue;
+ }
+ .submit-uptions{
+    margin-top: 4px;
+ }
+#login-content{
+    margin-top: 1rem;
+
+}
+#login-content.active {
+    display:none;
+}
+/* form .login-xist-container{
+   display: flex;
+   justify-content: space-between;
+   font-weight: bold 900;
+  
+   
+ } */
+.exits{
+   color: ;
+}
+
+ 
+  a{
+    text-decoration: none;
+ }
+ #sigin-content{
+    margin-top: 3.7rem;
+    display: none;
+ }
+ #sigin-content.actives{
+    display: flex;
+ }
+
+
+ .login{
+    color: var(--dark-primary-color);
+ }
+ .drop-down{
+   position:relative;
+   display: flex;
+   align-items: center;
+   width: 90%;
+   height: 3rem;
+   justify-content: space-between;
+   padding: 0rem 1rem;
+   cursor: pointer;
+   border-radius: 25px;
+   border: 1px solid hsl(0, 1%, 15%);
+ 
+  
+ }
+ form label{
+   font-size: 18px;
+ }
+ .list{
+   display: none;
+ }
+ .wrapper{
+   display: flex;
+   gap: 0.5rem;
+   align-items: center;
+ }
+.arrow{
+   font-size: 30px;
+   color: #000;
+}
+.list{
+   position: absolute;
+   background-color: #dbdbdb;
+   top: 35px;
+   left: 0;
+   width: 99%;
+   max-width: 300px;
+   max-height: 200px;
+   box-shadow: 0 4px 8px rgb(0,0,0,0.322);
+   cursor: pointer;
+   overflow-y:scroll ;
+
+}
+.iterm{
+   display: flex;
+   align-items: center;
+   padding: 0.5rem 1rem;
+   gap: 0.5rem;
+}
+ .sigin-xist-container{
+    justify-content: space-between;
+
+    color: var(--dark-primary-color);
+ }
+ 
+ /*home page*/
+ .containce{
+   display: flow-root;
+   height:- fit-content;
+ }
+ .buyinfor{
+   font-size: 2rem;
+   color:var(--dark-theme-secondary-color);
+ }
+ .Explore-casr{
+   font-size: 1rem;
+   color: #ff80ab;
+ }
+.Buy-Now{
+   padding: 0.5rem;
+   border: none;
+   color: var(--dark-theme-text-color);
+   background-color: #b90606;
+}
+   .buyer {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    margin: auto;
+  
+ }
+ .heading{
+    width: 100%;
+    color:var(--dark-accent-color);
+    background-color:rgb(36, 91, 173);
+    text-align: center;
+
+ }
+ .buyinfor{
+   z-index: 1;
+   position: absolute; 
+   text-align: center;
+   margin: auto;
+   top: 10%;
+   left: 25%;
+   width: 50%;
+   padding-top: 2rem;
+   line-height: 2rem
+  
+ }
+ .cartypes{
+   display:block;
+   max-width: 1000px;
+   position: relative;
+   align-items: center;
+   columns: 4;
+   column-width: 140px;
+   width:100%; 
+   margin: auto;
+   text-align: center;
+
+ }
+ .cartype{
+   font-size: 4rem;
+   margin-top: 2rem;
+ }
+ .type{
+background-color: #9b9b9b;
+padding: 1rem;
+margin-bottom: 1rem;
+break-inside: avoid;
+ }
