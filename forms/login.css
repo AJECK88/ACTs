@@ -1,0 +1,124 @@
+*{
+    border: 0;
+    box-sizing: border-box;
+
+}
+body{
+    max-width: 400px;
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+}
+.login_form{
+  max-width: 400px;
+  width: 100%;
+  box-shadow: .1rem .1rem .1rem .3rem hsl(40, 22%, 92%);
+  border-radius: 25px;
+}
+.login-logo-containeer{
+ display:flex;
+ width: 100%;
+ flex-direction: row;
+ justify-content:space-between;
+ margin-bottom: 0.5rem;
+ font-size: 20px;
+
+}
+.login-logo{
+  color: rgb(133, 133, 172);
+}
+.exit-box{
+  color: hsl(0, 5%, 74%);
+}
+.exit-box:hover{
+  color: rgb(204, 124, 124);
+}
+form{
+  padding: 1rem;
+  width: 100%;
+}
+input{
+  border: rgb(26, 24, 24) solid 1px;
+  width: 100%;
+  height: 1.6rem;
+  padding-left: 1rem;
+  margin: 0.2rem;
+  border-radius: 25px;
+  outline-color: rgb(101, 101, 124);
+}
+a #sign_up {
+  background-color: rgb(101, 101, 170);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  font-size: 20px;
+  font-weight: 200;
+}
+a #sign_up:hover{
+  background-color: rgb(129, 129, 179);
+}
+ #submit {
+  background-color:  rgb(49, 49, 230);
+  color: white;
+  border: none;
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight:200;
+}
+#submit:hover{
+  background-color:  rgb(123, 123, 223);
+}
+.county{
+  display: flex;
+  width: 100%;
+  padding:  0  1rem  0 1rem  ;
+  height: 1.6rem;
+  justify-content: space-between;
+  border-radius: 25px;
+  align-items: center;
+  border: solid  rgb(26, 24, 24) 1px  ;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.countys{
+  display: flex;
+  width: 100%;
+  padding:  0  1rem  0 .2rem  ;
+  justify-content: space-between;
+}
+.Names_Image_country{
+  position: absolute;
+  max-width:375px;
+  width:100%;
+  height: 8rem;
+  cursor: pointer;
+  flex-direction: column;
+  background-color:white;
+  overflow-y: scroll;
+  display: none;
+}
+@media all and (max-width :360px) {
+  .Names_Image_country{
+    max-width:333px;
+  width:100%;
+  } 
+}
+.countyAndImage{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .4rem 2.7rem 0.3rem 1.2rem ;
+}
+.countyAndImage:hover{
+  border: solid rgb(80, 70, 70) 1px;
+  background-color: rgb(252, 241, 241);
+}
+.active{
+  display: block;
+}

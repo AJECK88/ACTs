@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="singin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>sign_up</title>
+</head>
+<body>
+    <form action="log_in.php" method="post" class="login_form">
+        <div class="login-logo-containeer">
+            <span class="login-logo">LOGIN</span><span class="exit-box"><a href="/Homepage.html"><i class="fa-solid fa-xmark"></i></a></span>
+            </div>
+    <label for="fsname">user Name</label><br>
+    <input type="text" name="username" id="username" required  placeholder="first_name"><br> 
+    <label for="mail">Email</label><br>
+    <input type="email" name="email" id="email" required placeholder="example@mail.com">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required placeholder="password"><br>
+    <a href="log_in.html"><input type="button" value="SIGN_UP" id="sign_up"></a><br>
+    <input type="submit" value="submit" id="submit"><br>
+    </form>
+</body>
+</html>

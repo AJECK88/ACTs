@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <form action="log_in.php" method="post" class="login_form">
+        <div class="login-logo-containeer">
+        <span class="login-logo">sign-up</span><span class="exit-box"> <a href="/Homepage.html"><i class="fa-solid fa-xmark"></i></a></span>
+        </div>
+        <label for="fsname">First-Name</label><br>
+        <input type="text" name="username" id="firstname" required  placeholder="first_name"><br> 
+        <label for="lsname">Last-Name</label><br>
+        <input type="text" name="secondName" id="username" required placeholder="Last_name">
+        <label for="mail">Email</label><br>
+        <input type="email" name="email" id="email" required placeholder="example@mail.com">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="password"><br>
+        <label for="password">Conform password</label><br>
+        <input type="password" name="password" id="conformpassword" required placeholder="Conform password">
+        <br>
+        <section>
+        
+         <div class="select_county"> <span class="counties">County</span></div>
+         <div class="county"><span class="countys"></span><span class="dowp"><i class="fa-solid fa-chevron-up"></i></span></div>
+         <div class="Names_Image_country"></div>
+         <label for="city/regoin">City/Regoin</label>
+         <input type="text" name="city" id="city" placeholder="City/regoin">
+        </section>
+       <a href="sing_in.html"><input type="button" value="login" id="sign_up"></a><br>
+        <input type="submit" value="submit" id="submit"><br>
+    </form>
+
+</body>
+<script src="login.js"></script>
+</html>

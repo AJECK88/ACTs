@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+
+}
+body{
+    max-width: 400px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.login-logo-containeer{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+   
+   }
+   .login-logo{
+     color: rgb(133, 133, 172);
+   }
+   .exit-box{
+     color: hsl(0, 5%, 74%);
+   }
+   .exit-box:hover{
+     color: rgb(204, 124, 124);
+   }
+.login_form{
+    max-width: 400px;
+   width: 100%;
+   margin: auto;
+   box-shadow: 0.5rem 0.5rem 0.4rem 1rem rgb(236, 234, 234);
+   padding: 1rem;
+   border-radius: 25px;
+}
+input{
+    width: 100%;
+    border: solid black 1px;
+    height: 2rem;
+    border-radius: 25px;
+    padding: 0 0 0 1rem;
+    outline-color: rgb(101, 101, 124);
+}
+a #sign_up {
+    background-color: rgb(101, 101, 170);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    margin: .5rem 0 .5rem 0; 
+    font-size: 20px;
+    font-weight: 200;
+  }
+  a #sign_up:hover{
+    background-color: rgb(129, 129, 179);
+  }
+   #submit {
+    background-color:  rgb(49, 49, 230);
+    color: white;
+    border: none;
+    height: 2rem;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:200;
+  }
+  #submit:hover{
+    background-color:  rgb(123, 123, 223);
+  }

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');* {
+   font-family: Arial, Helvetica, sans-serif;
+   list-style:none;
+   font-weight: 100;
+   
+ }
+:root{
+    --primary-background-color: var(--light-theme-background-color);
+      --secondary-text-color: var(--light-theme-secondary-color);
+      --disabled-text-color: var(--light-theme-disabled-color);
+      --divider-color: var(--light-theme-divider-color);
+      --error-color: #dd2c00;
+      --primary-color: #3f51b5;
+      --light-primary-color: #c5cae9;
+      --dark-primary-color: #303f9f;
+      --accent-color: #ff4081;
+      --light-accent-color: #ff80ab;
+      --dark-accent-color: #f50057;
+      --light-theme-background-color: #fff;
+      --light-theme-base-color: #000;
+      --light-theme-text-color: #212121;
+      --light-theme-secondary-color: #737373;
+      --light-theme-disabled-color: #9b9b9b;
+      --light-theme-divider-color: #dbdbdb;
+      --dark-theme-background-color: #212121;
+      --dark-theme-base-color: #fff;
+      --dark-theme-text-color: #fff;
+      --dark-theme-secondary-color: #bcbcbc;
+      --dark-theme-disabled-color: #646464;
+      --dark-theme-divider-color: #3c3c3c;
+      --text-primary-color: var(--dark-theme-text-color);
+      --default-primary-color: var(--primary-color);
+    }
+body{
+   border: none;
+    margin: auto;
+    width: 100%;
+
+
+}
+header{
+    display: flex;
+    border-top: 0;
+    justify-content:space-between;
+}
+
+ .navber a:hover, .navber a:focus{
+    border-radius: 5px;
+    padding: 3px;
+    height: 20px;
+    background-color: var(--dark-theme-secondary-color);
+    color: var(--dark-theme-base-color);
+}
+header a{
+    padding: 3px;
+     color: var(--light-theme-base-color);
+     text-align: center;
+     text-decoration: none;
+  }
+  header{
+     height: 1.5rem;
+     width: 100%;
+     top: 0%;
+     text-align: center;
+     text-align: center;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     background-color: var(--dark-primary-color);
+ 
+     
+  }
+    .imergency{
+        justify-content: space-between;
+        position: absolute;   
+        z-index: 1; 
+        width: 10rem;
+        left: 0;
+        top: 2.5rem;
+        display: none;
+        border-bottom: solid rgb(96, 94, 94) 2px;
+        background-color: var(--dark-primary-color);
+        color: var(--light-theme-base-color);
+  }
+  
+.imergency a{
+   border-bottom: solid rgb(241, 209, 209)  1px;
+   padding: .5rem;
+  
+}
+.imergency a:hover, .imergency a:focus{
+   padding: .5rem;
+   color: white;
+   background-color: var(--dark-primary-color);
+
+}
+
+.active{
+   display: flex;
+   flex-direction: column;
+}
+.EmergencyGrouping-relative{
+  position: relative;
+}
+
+.logo{
+    display: flex;
+    gap: 2rem;
+    padding-left: 2rem;
+}
+.navber{
+    display: flex;
+    gap: 1rem;
+    padding-right: 2rem;
+
+}
+.Nav_bar{
+    color: white;
+    font-size: larger;
+    padding: 2px 1rem 2px 2px;
+    display: none;
+ }
+@media all and (max-width:750px) {
+    .navber{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        position: absolute;
+        height: fit-content;
+        font-size: 15px;
+        background-color: var(--dark-primary-color);
+        padding: 1rem; 
+        
+    }
+    .navber a:hover, .navber a:focus{
+        border-radius: 5px;
+        padding: 12;
+        height: 20px;
+        color: var(--dark-theme-base-color);
+    }
+ 
+  .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navber a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1px;
+        border-bottom: solid rgb(254, 251, 251) 1px;
+         color:white;
+         text-align: center;
+         text-decoration: none;
+    }
+    .imergency{
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 2px;
+        display: none;
+        position:static;
+        border-bottom: solid rgb(96, 94, 94) 2px;
+        background-color: var(--dark-primary-color);
+        color: var(--light-theme-base-color);
+  }
+  .imergency a{
+    border-bottom: none;
+    padding: .5rem;
+}
+  .EmergencyGrouping-relative{
+    position: relative;
+  }
+ 
+    .Nav_bar {
+        display: block;
+     }
+   .left_nav{
+        display: none;
+        background-color: #e6dede;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        opacity: 0.9;
+        margin: 2.5rem 0 0 0 ;
+        position: fixed;
+    } 
+    
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+ }
