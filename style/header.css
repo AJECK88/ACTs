@@ -40,31 +40,28 @@ body{
 }
 header{
     display: flex;
-    border-top: 0;
     justify-content:space-between;
+    align-items: center;
 }
 
  .navber a:hover, .navber a:focus{
     border-radius: 5px;
-    padding: 3px;
-    height: 20px;
+    padding: .4rem;
     background-color: var(--dark-theme-secondary-color);
     color: var(--dark-theme-base-color);
 }
 header a{
-    padding: 3px;
      color: var(--light-theme-base-color);
+     padding: .4rem;
      text-align: center;
      text-decoration: none;
   }
-  header{
-     height: 1.5rem;
+  header nav {
      width: 100%;
      top: 0%;
      text-align: center;
      text-align: center;
-     padding-top: 1rem;
-     padding-bottom: 1rem;
+     padding: 1rem;
      background-color: var(--dark-primary-color);
  
      
@@ -95,9 +92,11 @@ header a{
 }
 
 .active{
-   display: flex;
+   left: 0;
    flex-direction: column;
+   animation: naver linear alternate .5s forwards;
 }
+
 .EmergencyGrouping-relative{
   position: relative;
 }
@@ -109,9 +108,13 @@ header a{
 }
 .navber{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     padding-right: 2rem;
 
+}
+nav{
+  display: flex;
+  justify-content: space-between;
 }
 .Nav_bar{
     color: white;
@@ -119,23 +122,35 @@ header a{
     padding: 2px 1rem 2px 2px;
     display: none;
  }
+ section{
+background: #9b9b9b;
+width: fit-content;
+ }
+
 @media all and (max-width:750px) {
     .navber{
         display: flex;
         flex-direction: column;
         width: 70%;
         position: absolute;
-        height: fit-content;
         font-size: 15px;
         background-color: var(--dark-primary-color);
         padding: 1rem; 
-        
+        gap: .5rem;
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
     }
     .navber a:hover, .navber a:focus{
         border-radius: 5px;
-        padding: 12;
-        height: 20px;
+        padding: 14px 13px 14px 12px;
         color: var(--dark-theme-base-color);
+    }
+    .navber #login {
+      display: flex;
+      padding: 12px;
+      justify-content: center;
     }
  
   .nav{
@@ -144,13 +159,13 @@ header a{
     }
     .navber a{
         display: flex;
-        justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 1px;
+        padding: 14px 13px 14px 12px;
+        font-size: 16px;
+        font-weight: 600;
         border-bottom: solid rgb(254, 251, 251) 1px;
          color:white;
-         text-align: center;
          text-decoration: none;
     }
     .imergency{
@@ -165,7 +180,7 @@ header a{
   }
   .imergency a{
     border-bottom: none;
-    padding: .5rem;
+    padding: 14px 13px 14px 12px;
 }
   .EmergencyGrouping-relative{
     position: relative;
@@ -175,16 +190,42 @@ header a{
         display: block;
      }
    .left_nav{
-        display: none;
+       
         background-color: #e6dede;
         width: 100%;
         height: 100vh;
+        left: -1000px;
         margin: 0;
         opacity: 0.9;
         margin: 2.5rem 0 0 0 ;
         position: fixed;
+     
     } 
+    @keyframes  naver{
+  
+       50%{
+        left:-250px
+       }
+     
+      100%{
+        left: 0;
+      }
+    }
+    .active::after{
+      left: 0;
+      flex-direction: column;
+      animation: naverafter linear alternate .5s forwards;
+    }
+    @keyframes  naverafter{
+  
+      50%{
+       left:0px
+      }
     
+     100%{
+       left: -1000;
+     }
+   }
 }
 
 .active{
