@@ -3,67 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACTs.Haome</title>
+    <title>ACTs - Home</title>
+    
     <link rel="stylesheet" type="text/css" href="/style/header.css">
     <link rel="stylesheet" type="text/css" href="/style/homepage.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
+<body>
     <header>
         <nav>
-        <div class="logo">
-            <a href="Homepage.html" >ACT's</a>
-        </div>
-        <div class="left_nav">
-        <div class="navber">
-            <div><a href="Homepage.html" id="Home">Home</a></div>
-            <div><a href="#">About-us</a></div>
-            <div><a href="#">hire-car</a></div>
-            <div><a href="#"> book-car</a></div>
-            <div class="EmergencyGrouping-relative">
-             <a class="EmergencyGrouping">Emergency</a>
-            <div class="imergency" >
-                <a href="">Medical imergency</a>
-                <a href="">thieft</a>
-                <a href="">fire-brigate</a>
-              </div> 
+            <div class="logo">
+                <a href="Homepage.html"><img src="/images/ACT's_transparent-.png" alt="" width="100px"></a>
             </div>
-        
-          <div> <a href="/forms/log_in.html" target="_top" style="color: rgb(11, 11, 153);" id="login">login</a></div>
-        </div>
-    </div>  
-        <div class="Nav_bar" onclick="displays()"><i class=" fa-solid fa-bars"></i></div>
-    </nav>
+            <div class="left_nav">
+                <div class="navber">
+                    <div><a href="Homepage.html" id="Home">Home</a></div>
+                    <div><a href="#">About Us</a></div>
+                    <div><a href="#">Hire Car</a></div>
+                    <div><a href="#">Book Car</a></div>
+                    <div class="EmergencyGrouping-relative">
+                        <a class="EmergencyGrouping">Emergency</a>
+                        <div class="imergency">
+                            <a href="">Medical Emergency</a>
+                            <a href="">Theft</a>
+                            <a href="">Fire Brigade</a>
+                        </div>
+                    </div>
+                    <div><a href="/forms/log_in.html" target="_top" style="color: rgb(11, 11, 153);" id="login">Login</a></div>
+                </div>
+            </div>
+            <div class="Nav_bar" onclick="displays()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
     </header>
-    <!--  <section class="ACTs_unversal_contiant"> 
 
-     </section> -->
-     <article class="ACTs_aticles">
-        <div class="article_of_Acts">
-            <img  class="image_Aticle" src="/images/health.jpg" alt="" >
-               <p> If you are in a condition that need Medical health, kindly contact the near by hopital, we gat you cover 
-               <strong style="color: blue;"> ACT's</strong>  is here to help you get the closes avaible hopital for you just click to get full information of any near by medical care 
-               </p>
-               <i class="fa-solid fa-arrow-down fa-beat-fade" style="color: #cd3c98;"></i> <br>
-                <a href="" class="medical links_Arcts">Medical</a>
-        </div>
-        <div class="article_of_Acts">
-            <img class="image_Aticle"src="/images/marine force.jpeg" alt="">
-            <p>We our here for protection of the communities from danger of fire and other Emergencies call use if you need help</p>
-        <i class="fa-solid fa-arrow-down fa-beat-fade" style="color: #cd3c98;"></i> <br>
-        <a href="" class=" links_Arcts "> fire-brigate</a>
-        </div>
+    <section class="ACTs_universal_content">
+    
+    </section>
 
-        <div class="article_of_Acts">
-            <img class="image_Aticle" src="/images/theift.jpeg" alt="">
-            <p>Say no to thieft,to fight against any illegal active which is against the law. contact us if you are in a victim of thieft or you have any information about the illegal active</p>
+    <article class="ACTs_aticles">
+        <!-- Medical Article -->
+        <div class="article_of_Acts health-aticle">
+            <img class="image_Aticle" src="/images/health.jpg" alt="Medical Assistance">
+            <p>
+                If you are in a condition that needs medical help, kindly contact the nearest hospital. 
+                <strong style="color: blue;">ACT's</strong> is here to help you find the closest available hospital. 
+                Click below to get full information about nearby medical care.
+            </p>
             <i class="fa-solid fa-arrow-down fa-beat-fade" style="color: #cd3c98;"></i> <br>
-            <a href="" class="theift  links_Arcts">thieft</a>
-            </div>
-     </article>
-         </section>
-    <body>
-   <script src="index.js"></script>
+            <a href="" class="medical links_Arcts">Medical</a>
+        </div>
+
+        <!-- Fire Brigade Article -->
+        <div class="article_of_Acts fire-brigate-aticle">
+            <img class="image_Aticle" src="/images/marine force.jpeg" alt="Fire Brigade Assistance">
+            <p>
+                We are here to protect communities from the dangers of fire and other emergencies. 
+                Call us if you need help.
+            </p>
+            <i class="fa-solid fa-arrow-down fa-beat-fade" style="color: #cd3c98;"></i> <br>
+            <a href="" class="links_Arcts">Fire Brigade</a>
+        </div>
+
+        <!-- Theft Article -->
+        <div class="article_of_Acts theift-aticle">
+            <img class="image_Aticle" src="/images/theift.jpeg" alt="Theft Assistance">
+            <p>
+                Say no to theft! Fight against any illegal activity that is against the law. 
+                Contact us if you are a victim of theft or have any information about illegal activities.
+            </p>
+            <i class="fa-solid fa-arrow-down fa-beat-fade" style="color: #cd3c98;"></i> <br>
+            <a href="" class="theift links_Arcts">Theft</a>
+        </div>
+    </article>
+
+    <footer>
+        <a href=""><img src="/images/ACT's_transparent-.png" alt="" width="100px"></a>
+        <div class="footer col_1">
+        <form action="" id="footerForm">
+            <span class="footer_info">Contact us for any inquiries or assistance.</span><br>
+            <label for="Name">Full-name</label>
+             <input type="text" class="Name" id="Name" placeholder="Full Name"><br>
+             <label for="Email">Email</label>
+             <input type="email" class="Name" id="Name" placeholder="example@gmail.com"><br>
+             <label for="textarea"> Message</label>
+             <textarea name="message" id="Message" placeholder="message"></textarea><br>
+             <input type="button" value="Submit" id="Submit">
+        </form>
+        <div class="pages">
+            <span class="footer_info"> Usefull links of Afircan cars traficas</span>
+            <ul class="pages-list"></ul>
+           <li><a href="" class="pagelink">Home</a></li>
+           <li><a href="" class="pagelink">About-us</a></li> 
+            <li><a href="" class="pagelik">Hire car</a></li> 
+           <li><a href="" class="pagelik">Book car</a></li>
+            <li><a href="" class="pagelik">Medical</a></li>
+            <li><a href="" class="pagelik">Fire Brigade</a></li>
+           <li><a href="" class="pagelik">Theft</a></li> 
+            </ul>
+
+        </div>
+        <div class="social-icons">
+             <span class="footer_info">ACT's is a platform that connects you with emergency services in your area. 
+                We are here to help you in any emergency situation. 
+                Our team is dedicated to providing the best assistance possible.</span>
+            <a href="Tell:+237682031531 "><i class="fa-solid fa-phone"></i> <span>+237682031531</span></a>
+            <a href=""><i class="fa-brands fa-facebook"></i> <span class="socials">facebook</span> </a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> <span class="socials"> Twitter</span>  </a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> <span class="socials">instagram</span></a>
+        </div>
+        </div>
+     <hr class="line">
+        <div class="copyright">
+            <span>&copy; 2023 ACT's. All rights reserved.</span>
+            <span>Designed by:DANTI TECH<a href=""></span>
+    </footer>
+ 
+    <script src="index.js"></script>
+
 </body>
 </html>
