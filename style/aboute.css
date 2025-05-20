@@ -1,0 +1,151 @@
+.heading_of_About{
+    color: #615951;
+}
+.about_Use{
+   width: 100%;
+   background-color: #f9f9f9;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin: 2rem 0;
+   padding: 2rem 2rem 3rem 2rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* || the about-us style  */
+
+.heading_of_About {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ 
+ .flex_box_About{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.8;
+    max-width: 1700px;
+    margin-top: 1rem;
+ }
+ 
+ .team_member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    padding: 1rem;
+    min-height: 15rem;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px solid #cd853f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ body{
+    border:0;
+ }
+ .team_member:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .team_member img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+   
+ }
+ 
+ .team_member h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#cd853f;
+    margin-bottom: 0.1rem;
+ }
+ .team_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 8.5rem;
+ }
+ 
+ .team_member p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+ }
+ .about_intro {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 1.5rem;
+ }/* Responsive Design for About Us Section */
+@media all and (max-width: 768px) {
+    .flex_box_About {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+ }
+ 
+ @media all and (max-width: 423px) {
+   .about_Use{
+    background-color: #f9f9f9;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ .flex_box_About{
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem 2rem;
+    font-size: 13px;
+    overflow-y:scroll;
+   max-width:400px;
+    width: 100%;
+    font-weight: 500;
+    gap: 2rem;
+ }
+ 
+ .flex_box_About .team_member {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     max-width:400px;
+     min-width: 320px;
+     min-height: 200px;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        flex-direction: row;
+        
+    }
+    
+ }
