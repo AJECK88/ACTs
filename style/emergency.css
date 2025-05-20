@@ -142,6 +142,7 @@ body .flex_contain a{
     color: rgb(185, 50, 50);
     background-color: black;
     border-radius: 10px 30px 20px 10px;
+    border: solid 1px #943e3e;
     margin: 3rem 1rem 1rem 1rem;
     padding: 1rem;
  }
