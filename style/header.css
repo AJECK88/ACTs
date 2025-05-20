@@ -23,10 +23,10 @@
       --light-theme-disabled-color: #9b9b9b;
       --light-theme-divider-color: #dbdbdb;
       --dark-theme-background-color: #212121;
-      --dark-theme-base-color: #fff;
+      --dark-theme-base-color: #f7f7f7;
       --dark-theme-text-color: #fff;
-      --dark-theme-secondary-color: #bcbcbc;
-      --dark-theme-disabled-color: #646464;
+      --dark-theme-secondary-color: #737ad4;
+      --dark-theme-disabled-color: #7872cc;
       --dark-theme-divider-color: #3c3c3c;
       --text-primary-color: var(--dark-theme-text-color);
       --default-primary-color: var(--primary-color);
@@ -44,10 +44,23 @@ header{
     width: 100%;
     margin-top: 0;
     position: fixed;
+    z-index: 1;
     align-items: center;
 }
 
- .navber a:hover, .navber a:focus{
+ .navber a:focus{
+    border-radius: 5px;
+    padding: .4rem;
+    background-color: var(--dark-theme-secondary-color);
+    color: var(--dark-theme-base-color);
+ }
+ .navber a:hover{
+    border-radius: 5px;
+    padding: .4rem;
+    background-color: var(--dark-theme-secondary-color);
+    color: var(--dark-theme-base-color);
+}
+  #Home:focus[focus = "false"]{
     border-radius: 5px;
     padding: .4rem;
     background-color: var(--dark-theme-secondary-color);
@@ -61,15 +74,13 @@ header a{
   }
   header nav {
      width: 100%;
-     text-align: center;
      display: flex;
      height: 3.9rem;
      align-items: center;
      background-color: var(--dark-primary-color);
- 
-     
   }
-    .imergency{
+ 
+    .imergency {
         justify-content: space-between;
         position: absolute;   
         z-index: 1; 
@@ -81,25 +92,35 @@ header a{
         background-color: var(--dark-primary-color);
         color: var(--light-theme-base-color);
   }
+  /*  || making the arrow emergency not to display on the desktop screen size */
+  .emergency_dropdown{
+    display: none;
+  }
+  .EmergencyGroupings{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   
 .imergency a{
    border-bottom: solid rgb(241, 209, 209)  1px;
    padding: .5rem;
   
 }
-.imergency a:hover, .imergency a:focus{
-   padding: .5rem;
-   color: white;
-   background-color: var(--dark-primary-color);
 
-}
-
-.active{
-   left: 0;
-   flex-direction: column;
-   animation: naver linear alternate .5s forwards;
-}
-
+    
+  #EmergencyGrouping:hover .imergency{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1; 
+    width: 10rem;
+    left: 0;
+    top: 2.5rem;
+    border-bottom: solid rgb(96, 94, 94) 2px;
+    background-color: var(--dark-primary-color);
+    color: var(--light-theme-base-color);
+  }
 .EmergencyGrouping-relative{
   position: relative;
 }
@@ -111,43 +132,57 @@ header a{
 }
 .navber{
     display: flex;
+    align-items: center;
     gap: 1.5rem;
     top: 0;
     bottom: 0;
     padding-right: 2rem;
 
 }
-nav{
+.nav{
   display: flex;
   justify-content: space-between;
 }
+
 .Nav_bar{
     color: white;
     font-size: larger;
     padding: 2px 1rem 2px 2px;
     display: none;
  }
- section{
-background: #9b9b9b;
-width: fit-content;
- }
+ #EmergencyGrouping:hover .imergency{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1; 
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-bottom: solid rgb(96, 94, 94) 2px;
+  background-color: var(--dark-primary-color);
+  color: var(--light-theme-base-color);
+}
 
 @media all and (max-width:750px) {
     .navber{
         display: flex;
         flex-direction: column;
+        min-width: 330px;
+        max-width: 400px;
         width: 70%;
-        height: 90vh;
+        height: 100vh;
+        align-items: start;
         top: 3.4rem;
         font-size: 15px;
         background-color: var(--dark-primary-color);
-        padding: 1rem; 
+        padding: .6rem;
         position: fixed;
         gap: .5rem;
     }
     nav{
       display: flex;
       justify-content: space-between;
+     
     }
     .navber a:hover, .navber a:focus{
         border-radius: 5px;
@@ -160,15 +195,11 @@ width: fit-content;
       justify-content: center;
     }
  
-  .nav{
-        display: flex;
-        justify-content: space-between;
-    }
     .navber a{
         display: flex;
-        align-items: center;
-        width: 100%;
         padding: 14px 13px 14px 12px;
+        max-width: 1000px;
+        min-width: 300px;
         font-size: 16px;
         font-weight: 600;
         border-bottom: solid rgb(254, 251, 251) 1px;
@@ -178,23 +209,34 @@ width: fit-content;
     .imergency{
         justify-content: space-between;
         width: 100%;
-        margin-top: 2px;
         display: none;
         position:static;
+        padding-bottom:0 ;
         border-bottom: solid rgb(96, 94, 94) 2px;
         background-color: var(--dark-primary-color);
         color: var(--light-theme-base-color);
-  }
+    }
+    /* || displaying the arrow bar on the mobile screan size */
+    .emergency_dropdown{
+      display: flex;
+      font-size: 20px
+    }
+ 
+   
+  
+
   .imergency a{
     border-bottom: none;
     padding: 14px 13px 14px 12px;
-}
+
+  }  
+
   .EmergencyGrouping-relative{
     position: relative;
   }
  
     .Nav_bar {
-        display: block;
+        display: flex;
      }
    .left_nav{
         background-color: #e6dede;
@@ -202,6 +244,7 @@ width: fit-content;
         height: 100vh;
         top: 3.5rem;
         z-index: 1;
+        display: none;
         left: -1000px;
         margin: 0;
         opacity: 0.9;
@@ -211,31 +254,20 @@ width: fit-content;
     @keyframes  naver{
   
        50%{
-        left:-250px
+        left:-240px
        }
-     
+      
       100%{
         left: 0;
       }
     }
-    .active::after{
-      left: 0;
-      flex-direction: column;
-      animation: naverafter linear alternate .5s forwards;
-    }
-    @keyframes  naverafter{
-  
-      50%{
-       left:0px
-      }
-    
-     100%{
-       left: -1000;
+    .actives{
+      display: block;
      }
-   }
 }
-
-.active{
-    display: flex;
+   .active{
     flex-direction: column;
- }
+    display: block;
+    animation: naver linear alternate .5s forwards;
+  }
+ 

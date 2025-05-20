@@ -2,13 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }body {
     margin:0;
+}
+a{
+    text-decoration: none;
 }
 /* Grid layout for articles */
 .ACTs_aticles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-columns: repeat(3 , 1fr);
+    grid-auto-rows: minmax(370px, auto);
+    min-width: 370px;
+    width: 100%;
     margin:auto;
     padding: 20px;
     padding-top: 4.5rem;
@@ -35,9 +42,8 @@
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: #444;
-    z-index: -1;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
 }
 
 .article_of_Acts:hover {
@@ -50,7 +56,10 @@
     font-size: 30px;
     color: #2d6dcc;
 }
-
+.links_Arcts:hover{
+    background-color:  #1255b9;
+    color: rgb(247, 236, 236);
+}
 /* Styling for links */
 .links_Arcts {
     text-decoration: none;
@@ -65,10 +74,7 @@
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-.links_Arcts:hover {
-    background-color: #5b8ad1;
-    color: #f8f9fa;
-}
+
 
 /* Paragraph styling */
 p {
@@ -244,4 +250,260 @@ color: #2d6dcc;
  a .fa-solid{
     color: #25D366;
     font-size: 20px;
+ }
+ /* || booking and hireing a care */
+ .Book_And_HireA_car{
+   display:flex;
+   flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+ }
+ @keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.Book_And_HireA_car  div {
+    animation: zoomIn 0.8s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+ .Book_And_HireA_car > div:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+ figure img{
+    width:100%;
+    height: 11rem;
+ }
+ .BookingAcar ,.hireAcar{
+    background-color:aliceblue;
+    max-width: 650px;
+    min-width: 250px;
+    padding: 1rem 1rem 10px 1rem;
+    width: 100%;
+ }
+ .header_hired , .header_book{
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #cd853f;
+    padding: 1rem 0;
+ }
+
+ .figure_BookingAcar, .figure_hireAcar{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    gap: 1rem;
+ }
+ .book_car_info ,.hire_car_info{
+    line-height:1.6;
+    font-size: 13px;
+    color: #838282;
+
+ }
+
+ .button_book_car, .button_hire_car{
+    background-color:aliceblue;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border: none;
+    margin:10px 0  0 0;
+ }
+ a .fa-circle-arrow-right{
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+ }
+.fa-circle-arrow-right:hover{
+    background-color: #5b8ad1;
+    color: white;
+    border-radius: 50%;
+ }
+ /* || the about-us style  */
+ .heading_of_About{
+     color: #615951;
+ }
+ .about_Use{
+    width: 100%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem 2rem 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .heading_of_About {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ .flex_box_About{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.8;
+    max-width: 1700px;
+    margin-top: 1rem;
+ }
+
+ .team_member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    padding: 1rem;
+    min-height: 15rem;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px solid #cd853f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body{
+    border:0;
+}
+.team_member:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team_member img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+   
+}
+
+.team_member h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#cd853f;
+    margin-bottom: 0.1rem;
+}
+.team_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 8.5rem;
+}
+
+.team_member p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+.about_intro {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 1.5rem;
+}
+/* Responsive Design for About Us Section */
+@media all and (max-width: 768px) {
+    .flex_box_About {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+ @media all and (max-width: 423px) {
+
+    /* Grid layout for articles */
+.ACTs_aticles {
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    grid-auto-rows: minmax(370px, auto);
+    min-width: 350px;
+    width: 100%;
+    margin:auto;
+    padding: 7px;
+    padding-top: 4.5rem;
+    justify-content: center;
+    grid-gap: 15px;
+}
+.figure_BookingAcar, .figure_hireAcar{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-wrap:wrap;
+    gap: 1rem;
+}    .about_Use{
+    background-color: #f9f9f9;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+.flex_box_About{
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem 2rem;
+    font-size: 13px;
+    overflow-y:scroll;
+   max-width:400px;
+    width: 100%;
+    font-weight: 500;
+    gap: 2rem;
+}
+
+.flex_box_About .team_member {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     max-width:400px;
+     min-width: 320px;
+     min-height: 200px;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        flex-direction: row;
+        
+    }
+    
  }
