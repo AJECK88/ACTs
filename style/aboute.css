@@ -127,12 +127,18 @@
     justify-content: space-around;
     padding: 0 2rem 2rem;
     font-size: 13px;
-    overflow-y:scroll;
+    overflow-x:scroll;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
    max-width:400px;
     width: 100%;
     font-weight: 500;
     gap: 2rem;
  }
+
+.flex_box_About::-webkit-scrollbar {
+    display: none;
+}
  
  .flex_box_About .team_member {
      display: flex;

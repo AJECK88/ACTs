@@ -1,3 +1,4 @@
+
 const africanEmergencyNumbers = {
     Algeria: {
         countryName: "Algeria",
@@ -434,6 +435,8 @@ const emergencyNumbers = Object.values(africanEmergencyNumbers).map(country => (
     foreignEmergencyNumber: country.foreignEmergencyNumber
     
 }));
+
+
 function load_emergency( load) {
 emergencyNumbers.map((e)=>{
     const counties_container = document.querySelector(".Act_Energeency_contacts");
@@ -468,16 +471,18 @@ const button = document.querySelector("button");
 const input = document.querySelector("#searchInput");
 const countryNames = document.querySelectorAll(".country_name");
 const countryDivs = document.querySelectorAll(".country");
+// Convert NodeList to Array and extract country names in lowercase
 const countryNameArray = Array.from(countryNames).map(country => country.innerText.toLowerCase());
 const countryDivArray = Array.from(countryDivs);
 const search = (e) => {
-    const searchValue = input.value.toLowerCase();
+    const searchValue = input.value.trim().toLowerCase();
     countryDivArray.forEach((countryDiv, index) => {
-        if (countryNameArray[index].includes(searchValue)) {
+    if (countryNameArray[index].includes(searchValue)) {
             countryDiv.style.display = "block";
         } else {
             countryDiv.style.display = "none";
         }
+
     });
     if (searchValue === "") {
        alert("Please enter a country name");
@@ -494,13 +499,32 @@ const search = (e) => {
         </div>
         `;
     }
+
+    e.preventDefault(); // Prevent form submission if button is inside a form
 };
 button.addEventListener("click", search);
+/* ||| special  keys */
+input.addEventListener("keydown" , (event)=>{
+    if (event.key === "Enter") {
+        search(event);
+    }
+});
+   /* || this is to ti check if the us usses google outocompete  */
+input.addEventListener("change", (event) => {
+    search(event);
+});
+
     x_lick = () => {
         const countryDivs = document.querySelector(".Act_Energeency_contacts");
         countryDivs.innerHTML = ""
         window.location.reload()
+      
 }
+
+const text = `Welcome to ACT's Emergency Service. We provide emergency numbers for African countries. You can search for a specific country using the search bar.`;
+const voice = new SpeechSynthesisUtterance(text);
+window.speechSynthesis.speak(voice);
+ voice.lang = "en-US"; // Set the language to English (US)\
 
 /* const searchInput = document.querySelector("#searchInput");
 searchInput.addEventListener("input", search); */
