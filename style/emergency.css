@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.search_bar input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: solid 1px #ccc;
+    outline-color:  rgb(151, 149, 4);
+    transition: border-color 0.3s ease;
+}
+.fa-chevron-left{
+    font-size: 20px;
+    color: #000;
+    margin-right: 1rem;
+}
+header{
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: fixed;
+    height: 40px;
+}
+/* || stying the search bar */
+.search_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 auto;
+   gap: 1rem;
+}
+.Act_Energeency_contacts{
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+  
+}
+#searchButton{
+    background-color: #222423;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* || Phone tensition  of a tag */
+#searchButton:hover .fa-magnifying-glass{
+ color:  #25D366;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    
+}
+.country{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border: solid aquamarine 1px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+.country_name_flag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(124, 122, 122);
+    width: 100%;
+}
+.image_of_Countary img{
+    width: 50px;
+    height: 50px;
+    
+}
+.flex_contain{
+    display: flex;
+    align-items: center;
+    border: solid rgb(151, 149, 4) 1px;
+    border-radius: 10px;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    gap:1rem;
+    margin-top: 1rem;
+}
+body .flex_contain a{
+    text-decoration: none;
+    color: #fff;
+    background-color:  #25D366 ;
+    padding: 0.5rem .7rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
+
+/* || Phone tensition  of a tag */
+.flex_contain  a:hover{
+  
+    background-color:  #22a153 ;
+    text-decoration: none;
+    transform: translatey(-5px);
+ 
+
+
+}
+ .country_notification{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "sans-serif";
+    font-weight: 800;
+    color: rgb(185, 50, 50);
+    background-color: black;
+    border-radius: 10px 30px 20px 10px;
+    border: solid 1px #943e3e;
+    margin: 3rem 1rem 1rem 1rem;
+    padding: 1rem;
+ }
+ .country_notification p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+ }
+    .country_notification .fa-x{
+        display: flex;
+        justify-content: right;
+    }
+      

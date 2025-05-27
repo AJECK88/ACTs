@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTs - Home</title>
+    
+    <link rel="stylesheet" type="text/css" href="/style/header.css">
+    <link rel="stylesheet" type="text/css" href="/style/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body id="body">
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="#body" target="_blank"><img src="/images/ACT's_transparent-.png" alt="" width="100px"></a>
+            </div>
+            <div class="left_nav">
+                <div class="navber">
+                    <div id="Home"><a href="#body">Home</a></div>
+                    <div><a href="#">About Us</a></div>
+                    <div><a href="#hireAcar">Hire Car</a></div>
+                    <div><a href="#BookingAcar">Book Car</a></div>
+                    <div class="EmergencyGrouping-relative ">
+                        <div id="EmergencyGrouping"  onclick="dropdawn()"><a class="EmergencyGroupings"><h4>Emergency</h4><div class="emergency_dropdown"><i class="fa-solid fa-chevron-down"></i></div></a>
+                        <div class="imergency">
+                            <a href="/page/emergency.html">Medical Emergency</a>
+                            <a href="/page/emergency.html">Theft</a>
+                            <a href="/page/emergency.html">Fire Brigade</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div><a href="/forms/log_in.html" target="_top" style="color: rgb(241, 241, 253);" id="login">Login</a></div>
+                </div>
+            </div>
+
+            <div class="Nav_bar" onclick="displays()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <section class="ACTs_universal_content">
+    
+    </section>
+
+    <article class="ACTs_aticles">
+        <!-- Medical Article -->
+        <div class="article_of_Acts health-aticle">
+            <img class="image_Aticle" src="/images/health.jpg" alt="Medical Assistance">
+            <p>
+                If you are in a condition that needs medical help, kindly contact the nearest hospital. 
+                <strong style="color: #8b8be7;">ACT's</strong> is here to help you find the closest available hospital. 
+                Click below to get full information about nearby medical care.
+            </p>
+            <i class="fa-solid fa-arrow-down fa-beat-fade" style="color: #cd3c98;"></i> <br>
+
+         <a href="/page/emergency.html" class="medical links_Arcts">Medical</a>
+        </div>
+        
+
+        <!-- Fire Brigade Article -->
+        <div class="article_of_Acts fire-brigate-aticle">
+            <img class="image_Aticle" src="/images/marine force.jpeg" alt="Fire Brigade Assistance">
+            <p>
+                We are here to protect communities from the dangers of fire and other emergencies. 
+                Call us if you need help.
+            </p>
+            <i class="fa-solid fa-arrow-down fa-beat-fade" style="color: #cd3c98"></i> <br>
+            <a href="/page/emergency.html" class="links_Arcts links_Arcts">Fire Brigade</a>
+        </div>
+
+        <!-- Theft Article -->
+        <div class="article_of_Acts theift-aticle">
+            <img class="image_Aticle" src="/images/theift.jpeg" alt="Theft Assistance">
+            <p>
+                Say no to theft! Fight against any illegal activity that is against the law. 
+                Contact us if you are a victim of theft or have any information about illegal activities.
+            </p>
+            <i class="fa-solid fa-arrow-down fa-beat-fade" style="color: #cd3c98;"></i> <br>
+            <a href="/page/emergency.html" class="theift links_Arcts">Theft</a>
+        </div>
+    </article>
+    <article class="Book_And_HireA_car">
+       <div class="BookingAcar" id="BookingAcar">
+            <h3 class="header_hired">Hire your sream car</h3>
+         <figure class="figure_BookingAcar">
+            <img src="/images/hirecar1.jpeg"  alt="">
+            <span class="book_car_info">
+                Whether you need a car for a short trip or a long journey, we have the perfect vehicle for you. 
+                Our cars are well-maintained and come with all the necessary features to ensure a comfortable ride. 
+                we have something for everyone. 
+                So whether you're traveling for business or pleasure,
+            </span>
+            </figure>
+            
+           <a href="/page/hireCar.html"><button type="button" class="button_book_car"> <i class="fa-solid fa-circle-arrow-right" style="color: #FFD43B;"></i></button></a> 
+        </div>
+        
+         
+        <div class=" hireAcar" id="hireAcar">
+            <h3  class="header_book"> Book from home, the agency to travel</h3>
+         <figure class="figure_hireAcar">  <img src="/images/bookcar1.jpeg" width="" alt="" class="image_hireAcar">
+         <span class="hire_car_info">   
+                Our online booking system is easy to use and allows you to select the car you want, 
+                choose your pickup and drop-off locations, and make payment securely. 
+                You can also view our fleet of cars and their features before making a decision. 
+                With ACT's, you can book a car from the comfort of your home or office, 
+                saving you time and hassle.
+         </span>
+        </figure>
+       <a href="/page/bookingCar.html"> <button type="button" class="button_hire_car"> <i class="fa-solid fa-circle-arrow-right" style="color: #FFD43B;"></i></button></a>
+        </div>  
+</article>
+<section class="about_Use">
+    <h2 class="heading_of_About">About Us</h2>
+    <p class="about_intro">
+        At ACT's, we are committed to connecting people with essential services and resources. 
+        Our mission is to provide reliable assistance in emergencies, seamless car booking and hiring services, 
+        and a platform that prioritizes your safety and convenience. With a dedicated team of professionals, 
+        we strive to make a positive impact in the lives of our users.
+    </p>
+    <div class="flex_box_About" id="about">
+        <!-- Existing team member cards -->
+        <div class="team_member">
+            <img src="/images/about_image/avatar-testimonial.jpg" alt="Team Member 2">
+            <div class="team_info">
+            <h3>Jane Smith</h3>
+            <p>UI/UX Designer focused on creating user-friendly and visually appealing designs.</p>
+            </div>
+        </div>
+        <div class="team_member">
+            <img src="/images/about_image/team1.png" alt="Team Member 1"> 
+             <div class="team_info">
+            <h3>Danti Tech</h3>
+            <p>Lead Developer with expertise in front-end and back-end technologies.</p>
+        </div>
+        </div>
+        <div class="team_member">
+            <img src="/images/about_image/avatar-testimonial.jpg" alt="Team Member 3">
+        <div class="team_info">
+            <h3>Emily Johnson</h3>
+            <p>Project Manager ensuring timely delivery and quality of all projects.</p>
+        </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <a href=""><img src="/images/ACT's_transparent-.png" alt="" width="100px"></a>
+        <div class="footer col_1">
+        <form action="" id="footerForm" name="footerForm">
+            <span class="footer_info">Contact us for any inquiries or assistance.</span><br>
+            <label for="Name">Full-name</label>
+             <input type="text" class="Name" id="Name" placeholder="Full Name" id="Name" autocomplete="additional-name"><br>
+             <label for="Emails">Email</label>
+             <input type="email" class="Name"placeholder="example@gmail.com" id="Emails" autocomplete="email"> <br>
+             <label for="textarea"> Message</label>
+             <textarea name="message" id="textarea" placeholder="message" ></textarea><br>
+             <input type="button" value="Submit" id="Submit">
+        </form>
+        <div class="pages">
+            <span class="footer_info"> Usefull links of Afircan cars traficas</span>
+            <ul class="pages-list"></ul>
+           <li><a href="Home.html" class="pagelink">Home</a></li>
+           <li><a href="#about" class="pagelink">About-us</a></li> 
+            <li><a href="/page/hireCar.html" class="pagelik">Hire car</a></li> 
+           <li><a href="/page/bookingCar.html" class="pagelik">Book car</a></li>
+            <li><a href="/page/emergency.html" class="pagelik">Medical</a></li>
+            <li><a href="/page/emergency.html" class="pagelik">Fire Brigade</a></li>
+           <li><a href="/page/emergency.html" class="pagelik">Theft</a></li> 
+            </ul>
+
+        </div>
+        <div class="social-icons">
+             <span class="footer_info">ACT's is a platform that connects you with emergency services in your area. 
+                We are here to help you in any emergency situation. 
+                Our team is dedicated to providing the best assistance possible.</span>
+            <a href="Tell:+237682031531 "><i class="fa-solid fa-phone"></i> <span>+237682031531</span></a>
+            <a href=""><i class="fa-brands fa-facebook"></i> <span class="socials">facebook</span> </a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> <span class="socials"> Twitter</span>  </a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> <span class="socials">instagram</span></a>
+        </div>
+        </div>
+     <hr class="line">
+        <div class="copyright">
+            <span>&copy; 2023 ACT's. All rights reserved.</span>
+          
+    </footer>
+ 
+    <script src="index.js" type="module"></script>
+
+</body>
+</html>

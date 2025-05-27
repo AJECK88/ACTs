@@ -1,57 +1,515 @@
-*{
-    border: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+   
+}body {
+    margin:0;
 }
-.ACTs_aticles{
+a{
+    text-decoration: none;
+}
+/* Grid layout for articles */
+.ACTs_aticles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-   }
-   .image_Aticle{
+    grid-template-columns: repeat(3 , 1fr);
+    grid-auto-rows: minmax(370px, auto);
+    min-width: 370px;
+    width: 100%;
+    margin:auto;
+    padding: 20px;
+    padding-top: 4.5rem;
+    justify-content: center;
+    width: 100%;
+    grid-gap: 15px;
+}
+
+/* Styling for article images */
+.image_Aticle {
     width: 100%;
     height: 250px;
     object-fit: cover;
-   }
+    border-radius: 10px;
+}
 
-   .article_of_Acts{ 
-    background-color: rgb(235, 244, 245);
-    padding: 10px; 
+/* Styling for individual articles */
+.article_of_Acts {
+    background-color: #f8f9fa;
+    padding: 15px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
-    border-radius: 10px; 
-   }
-   /* || changing the size of the icon */
-   .fa-solid{
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+}
+
+.article_of_Acts:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon size adjustment */
+.fa-solid {
     font-size: 30px;
-   }
-   /* || modifying the links of all emergencies */
-   .links_Arcts{
+    color: #2d6dcc;
+}
+.links_Arcts:hover{
+    background-color:  #1255b9;
+    color: rgb(247, 236, 236);
+}
+/* Styling for links */
+.links_Arcts {
     text-decoration: none;
-    color: rgb(246, 250, 248);
-    font-size: 20px;
-    font-weight: 400;
+    color: #d9e2ef;
+    font-size: 18px;
+    font-weight: 500;
     min-width: 150px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    padding:10px ;
+    padding: 10px;
     border-radius: 10px;
     background-color: #2d6dcc;
-    transition: all .4s ease;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
 
-   }
-   .links_Arcts:hover{
-    background-color: #5b8ad1;
-    color: rgb(216, 210, 210);
-   }
-   p{
-    font-size: 20px;
+
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
     width: 100%;
-    padding: 20px 3px 3px 3px;
+    padding: 15px 5px;
     min-height: 10rem;
-    background-color:inherit;
+    background-color: inherit;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Animation for health articles */
+.health-aticle {
+    animation: health-aticle 3s ease-in;
+}
+
+@keyframes health-aticle {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation for fire brigade articles h.. */
+.fire-brigate-aticle {
+    animation: fire-brigate-aticle 8s ease-in;
+}
+
+@keyframes fire-brigate-aticle {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for theft articles */
+.theift-aticle {
+    animation: thieft-aticle 5s ease-in;
+}
+
+@keyframes thieft-aticle {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* footer */
+footer{
+    background-color: rgb(229, 237, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding: 1.5rem;
+}
+.footer_info{
+    color: #838282;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footerForm{
+    display: flex;
+    max-width: 250px;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+input{
+    width: 100%;
+    height: 2rem;
+    padding: 0 0 0 1rem;
+    border-radius: 4px;
+     border: none;
+}
+textarea{
+    max-width: 270px;
+    min-width: 250px;
+    min-height: 100px;
+    max-height: 100px;
+    line-height: normal;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    padding: .3rem 0 0 1rem;
+    border-radius: 4px;
+}
+#Submit{
+    color: white;
+    padding: 0;
+    background-color: #5b8ad1;
+}
+ #Submit:hover{
+    background-color: #2d6dcc;
+ }
+ .pages{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 1rem;
+  gap: .5rem;
+
+
+ }
+ .pages a{
+    color: #313636;
+  text-decoration:none;
+ }
+ .social-icons{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin: 1rem 0 0 1rem;
+    gap: .5rem;
+ }
+ .social-icons a{
+     text-decoration: none;
+     color: #313636;
+ }
+ /* || hover color of the social and page links */
+  .pages a:hover {
+    color: #5b8ad1;
+ }
+ .social-icons a :hover{
+    color: #5b8ad1;
+ }  
+
+  .copyright{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    color: #725858;
+  }
+ .fa-facebook ,.fa-twitter{
+color: #2d6dcc;
+ }
+ .fa-instagram{
+    color: red;
+ }
+ a .fa-solid{
+    color: #25D366;
+    font-size: 20px;
+ }
+ /* || booking and hireing a care */
+ .Book_And_HireA_car{
+   display:flex;
+   flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+ }
+ @keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.Book_And_HireA_car  div {
+    animation: zoomIn 0.8s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+ .Book_And_HireA_car > div:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+ figure img{
+    width:100%;
+    height: 11rem;
+ }
+ .BookingAcar ,.hireAcar{
+    background-color:aliceblue;
+    max-width: 650px;
+    min-width: 250px;
+    padding: 1rem 1rem 10px 1rem;
+    width: 100%;
+ }
+ .header_hired , .header_book{
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #cd853f;
+    padding: 1rem 0;
+ }
+
+ .figure_BookingAcar, .figure_hireAcar{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    gap: 1rem;
+ }
+ .book_car_info ,.hire_car_info{
+    line-height:1.6;
+    font-size: 13px;
+    color: #838282;
+
+ }
+
+ .button_book_car, .button_hire_car{
+    background-color:aliceblue;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border: none;
+    margin:10px 0  0 0;
+ }
+ a .fa-circle-arrow-right{
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+ }
+.fa-circle-arrow-right:hover{
+    background-color: #5b8ad1;
+    color: white;
+    border-radius: 50%;
+ }
+ /* || the about-us style  */
+ .heading_of_About{
+     color: #615951;
+ }
+ .about_Use{
+    width: 100%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem 2rem 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .heading_of_About {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ .flex_box_About{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     font-weight: 400;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   }
+    color: #555;
+    line-height: 1.8;
+    max-width: 1700px;
+    margin-top: 1rem;
+ }
+
+ .team_member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    padding: 1rem;
+    min-height: 15rem;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px solid #cd853f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body{
+    border:0;
+}
+.team_member:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team_member img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+   
+}
+
+.team_member h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#cd853f;
+    margin-bottom: 0.1rem;
+}
+.team_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 8.5rem;
+}
+
+.team_member p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+.about_intro {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 1.5rem;
+}
+/* Responsive Design for About Us Section */
+@media all and (max-width: 768px) {
+    .flex_box_About {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+ @media all and (max-width: 470px) {
+
+    /* Grid layout for articles */
+.ACTs_aticles {
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    grid-auto-rows: minmax(370px, auto);
+    min-width: 350px;
+    width: 100%;
+    margin:auto;
+    padding: 7px;
+    padding-top: 4.5rem;
+    justify-content: center;
+    grid-gap: 15px;
+}
+.figure_BookingAcar, .figure_hireAcar{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-wrap:wrap;
+    gap: 1rem;
+}    .about_Use{
+    background-color: #f9f9f9;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ .flex_box_About{
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem 2rem;
+    font-size: 13px;
+    overflow-x:scroll;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+   max-width:400px;
+    width: 100%;
+    font-weight: 500;
+    gap: 2rem;
+ }
+
+.flex_box_About::-webkit-scrollbar {
+    display: none;
+}
+
+.flex_box_About .team_member {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     max-width:400px;
+     min-width: 320px;
+     min-height: 200px;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        flex-direction: row;
+        
+    }
+    
+ }
