@@ -425,7 +425,7 @@ const africanEmergencyNumbers = {
     }
 };
 
-const emergencyNumbers = Object.values(africanEmergencyNumbers).map(country => ({
+const emergencyNumbers = Object.values(africanEmergencyNumbers).map( (country)=> ({
     country:country.countryName,
     img:country.flag,
     police: country.police,
@@ -520,11 +520,11 @@ input.addEventListener("change", (event) => {
         window.location.reload()
       
 }
-
+/* 
 const text = `Welcome to ACT's Emergency Service. We provide emergency numbers for African countries. You can search for a specific country using the search bar.`;
 const voice = new SpeechSynthesisUtterance(text);
 window.speechSynthesis.speak(voice);
- voice.lang = "en-US"; // Set the language to English (US)\
+ voice.lang = "en-US";  */// Set the language to English (US)\
 
 /* const searchInput = document.querySelector("#searchInput");
 searchInput.addEventListener("input", search); */
