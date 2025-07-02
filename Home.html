@@ -148,13 +148,13 @@
         <div class="footer col_1">
         <form action="" id="footerForm" name="footerForm">
             <span class="footer_info">Contact us for any inquiries or assistance.</span><br>
-            <label for="Name">Full-name</label>
-             <input type="text" class="Name" id="Name" placeholder="Full Name" id="Name" autocomplete="additional-name"><br>
+            <label for="name">Full-name</label>
+             <input type="text" class="name" name="name" placeholder="Full Name" id="Name" autocomplete="additional-name"><br>
              <label for="Emails">Email</label>
-             <input type="email" class="Name"placeholder="example@gmail.com" id="Emails" autocomplete="email"> <br>
+             <input type="email" class="Name"placeholder="example@gmail.com" id="Emails" name="email" autocomplete="email"> <br>
              <label for="textarea"> Message</label>
              <textarea name="message" id="textarea" placeholder="message" ></textarea><br>
-             <input type="button" value="Submit" id="Submit">
+             <input type="submit" value="submit" id="Submit">
         </form>
         <div class="pages">
             <span class="footer_info"> Usefull links of Afircan cars traficas</span>
@@ -184,8 +184,13 @@
             <span>&copy; 2023 ACT's. All rights reserved.</span>
           
     </footer>
- 
+    <script src="/script/Email.js"></script>
     <script src="index.js" type="module"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<script type="text/javascript">
+  emailjs.init('RJFlfPg63FWxa47V1')
+</script>
 </body>
 </html>

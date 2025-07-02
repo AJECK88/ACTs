@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfafa;
+}
+
+#CameronCarBooking{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: white;
+}
+.agency-card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+.Agency_card_Name{
+    font-size: 2rem;
+    font-weight: bold 700;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5rem;
+}
+.agency-card:hover{
+     transform: translatey(-5px) ;
+}
+.header_Agency{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.agency-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    color: #5c5a5a;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.1rem;
+}
+.location span{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    padding-top: .4rem;
+}
+
+.fa-solid{
+    color: #f0c0c0;
+    margin-right: 4px;
+    
+}
